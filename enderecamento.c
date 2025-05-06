@@ -28,6 +28,13 @@ int main() {
     for (i = 0; i < TAM; i++) {
         auxiliar[vetor[i]]++;
     }
+    
+     // Exibindo vetor auxiliar
+     printf("Vetor Auxiliar:\n");
+     for (i = 0; i < TAM; i++) {
+         printf("%d ", auxiliar[i]);
+     }
+     printf("\n");
 
     // Reconstruindo o vetor original, agora ordenado
     for (i = 0; i < MAX; i++) {
@@ -35,13 +42,7 @@ int main() {
             vetor[k++] = i;
         }
     }
-
-     // Exibindo vetor auxiliar
-     printf("Vetor Auxiliar:\n");
-     for (i = 0; i < TAM; i++) {
-         printf("%d ", auxiliar[i]);
-     }
-     printf("\n");
+    printf("\n");
 
     // Exibindo vetor ordenado
     printf("Vetor ordenado:\n");
@@ -50,5 +51,9 @@ int main() {
     }
     printf("\n");
 
+    // Esvaziando vetor auxiliar
+    for (i = 0; i < MAX; i++) {
+        auxiliar[i] = 0;
+    }
     return 0;
 }
