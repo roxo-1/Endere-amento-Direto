@@ -31,7 +31,7 @@ int main() {
     
      // Exibindo vetor auxiliar
      printf("Vetor Auxiliar:\n");
-     for (i = 0; i < TAM; i++) {
+     for (i = 0; i < MAX; i++) {
          printf("%d ", auxiliar[i]);
      }
      printf("\n");
